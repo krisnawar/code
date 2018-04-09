@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>KONVERSI NILAI DENGAN PHP</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+	<div class="menu">
+		<ul>
+			<li><img width="120" src="unch.png"></li>
+			<li><a href="#">HOME</a></li>
+			<li><a href="#">AKADEMIK</a></li>
+			<li><a href="#">TENAGA KERJA</a></li>
+			<li><a href="#">HALAMAN MAHASISWA</a></li>
+ 		</ul>
+	</div>
+<body>
+	<div class="content">
+	<div class="header">
+		<img src="header.jpg" style="margin: 10px 10px;">
+	</div>
+	<div class="form">
+		<form id="formKonversi" action="hasil.php" target="_blank" method="POST">
+			<fieldset>
+				<legend align="center"><h2>FORM INPUT NILAI MATA KULIAH</h2></legend>
+				<table border="1" align="center" bgcolor="#ced7e5">
+					<th width="400px">NAMA MATA KULIAH</th>
+					<th width="150px">JUMLAH SKS</th>
+					<th width="150px">NILAI DALAM ANGKA</th>
+					<tr>
+						<td align="center"><input type="text" size="20" id="makulA" name="makulA" required style="width: 300px"></td>
+						<td align="center"><input type="text" id="sksA" name="sksA" required pattern="[0-9]" style="width: 100px"></td>
+						<td align="center"><input type="text" id="aNilaiA" name="aNilaiA" required pattern="^[0-9][\.\d]*?" style="width: 100px"></td>
+					</tr>
+					<tr>
+						<td align="center"><input type="text" size="20" id="makulB" name="makulB" required style="width: 300px"></td>
+						<td align="center"><input type="text" id="sksB" name="sksB" required pattern="[0-9]" style="width: 100px"></td>
+						<td align="center"><input type="text" id="aNilaiB" name="aNilaiB" required pattern="^[0-9][\.\d]*?$" style="width: 100px"></td>
+					</tr>
+					<tr>
+						<td align="center"><input type="text" size="20" id="makulC" name="makulC" required style="width: 300px"></td>
+						<td align="center"><input type="text" id="sksC" name="sksC" required pattern="[0-9]" style="width: 100px"></td>
+						<td align="center"><input type="text" id="aNilaiC" name="aNilaiC" required pattern="^[0-9][\.\d]*?$" style="width: 100px"></td>
+					</tr>
+					<tr>
+						<td align="center"><input type="text" size="20" id="makulD" name="makulD" required style="width: 300px"></td>
+						<td align="center"><input type="text" id="sksD" name="sksD" required pattern="[0-9]" style="width: 100px"></td>
+						<td align="center"><input type="text" id="aNilaiD" name="aNilaiD" required pattern="^[0-9][\.\d]*?$" style="width: 100px"></td>
+					</tr>
+					<tr>
+						<td align="center"><input type="text" size="20" id="makulE" name="makulE" required style="width: 300px"></td>
+						<td align="center"><input type="text" id="sksE" name="sksE" required pattern="[0-9]" style="width: 100px"></td>
+						<td align="center"><input type="text" id="aNilaiE" name="aNilaiE" required pattern="^[0-9][\.\d]*?$" style="width: 100px"></td>
+					</tr>
+				</table>
+				<div style="text-align: center; padding-top: 10px">
+					<button type="submit" name="rsubmit" size="20px" align="center">KONVERSIKAN</button>
+					<input type="reset" value="RESET" size="20px" align="center">
+				</div>
+			</fieldset>
+		</form>
+	</div>
+	</div>
+</body>
+</html>
